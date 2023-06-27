@@ -63,7 +63,17 @@ private No adicionarNo(No no, int valor) {
   }
 
   public void percorrer() {
+    System.out.print("Percorrendo em ordem: ");
     percorrerEmOrdem(raiz);
+    System.out.println();
+    
+    System.out.print("Percorrendo em pré-ordem: ");
+    percorrerPreOrdem(raiz);
+    System.out.println();
+
+    System.out.print("Percorrendo em pós-ordem: ");
+    percorrerPosOrdem(raiz);
+    System.out.println();
   }
 
   private void percorrerEmOrdem(No no) {
